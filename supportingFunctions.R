@@ -115,6 +115,7 @@ CompiledData<-function(dir){
   countryxcompiled<-read.csv("countryX/alldata.csv")
   countryycompiled<-read.csv("countryY/alldata.csv")
   alldata<-merge(countryxcompiled,countryycompiled)
+  write.csv(alldata,file="alldata.csv")
 }
   
 CompiledData("/Users/eselland/Documents/ND/IntroBiocomputing/R_project/Rproject2021/")
